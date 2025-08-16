@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <!-- Tombol Back -->
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/kembali"
+        android:contentDescription="Back"
+        android:padding="4dp"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+
+    <!-- ScrollView untuk semua level -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnBack"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:id="@+id/levelContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingBottom="32dp">
+
+            <!-- Level 1 -->
+            <ImageView
+                android:id="@+id/btnLevel1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/lev1sk"
+                android:contentDescription="Level 1"
+                android:scaleType="centerCrop" />
+
+            <!-- Level 2–5 -->
+            <ImageView
+                android:id="@+id/btnLevel2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_lock"
+                android:contentDescription="Level 2"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:id="@+id/btnLevel3"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_lock"
+                android:contentDescription="Level 3"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:id="@+id/btnLevel4"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_lock"
+                android:contentDescription="Level 4"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:id="@+id/btnLevel5"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_lock"
+                android:contentDescription="Level 5"
+                android:scaleType="centerInside" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

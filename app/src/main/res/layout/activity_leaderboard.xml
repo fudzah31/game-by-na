@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <!-- Tombol Back -->
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="start"
+        android:src="@drawable/back"
+        android:contentDescription="Back"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Gambar Leaderboard -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_marginTop="-60dp"
+        android:src="@drawable/leader" />
+
+    <!-- RecyclerView untuk leaderboard -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerLeaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-50dp"
+        android:layout_weight="1"/>
+</LinearLayout>

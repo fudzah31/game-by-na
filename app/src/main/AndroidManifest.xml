@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GameByNa"
+        tools:targetApi="31">
+        <activity
+            android:name=".Level5TNActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level4TNActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level3TNActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level2TNActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level1TNActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level5MTActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level4MTActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level3MTActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level2MTActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level1MTActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level5TGActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level4TGActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level3TGActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level2TGActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level1TGActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level5SKActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level4SKActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level3SKActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level2SKActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level1SKActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tebaknegaraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".matematikaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tebakgambarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".susunkataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LeaderboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Level10Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Level9Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Level8Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Level7Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Level6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Level5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Level4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Level3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Level2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Level1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

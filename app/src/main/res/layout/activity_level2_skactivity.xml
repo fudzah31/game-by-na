@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <!-- Tombol home/pause -->
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-15dp"
+        android:background="@drawable/home"
+        android:contentDescription="Back" />>
+
+    <!-- Timer di tengah atas -->
+    <TextView
+        android:id="@+id/text_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:background="@drawable/edittx"
+        android:text="00:30"
+        android:textSize="18sp"
+        android:textColor="@android:color/white" />
+
+    <!-- Skor di kanan atas -->
+    <TextView
+        android:id="@+id/text_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:padding="8dp"
+        android:background="@drawable/edittx"
+        android:text="Score: 0"
+        android:textSize="18sp"
+        android:textColor="@android:color/white" />
+
+    <!-- Kartu soal utama -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Gambar soal -->
+            <ImageView
+                android:id="@+id/image_word"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pesawat" />
+
+            <!-- Instruksi soal -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Susun kata berikut:"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+
+            <!-- Kotak jawaban -->
+            <EditText
+                android:id="@+id/edit_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Jawaban"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:inputType="text"
+                android:focusable="false"
+                android:cursorVisible="false" />
+
+            <!-- Grid huruf -->
+            <GridLayout
+                android:id="@+id/grid_letters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:columnCount="7"
+                android:rowCount="1"
+                android:alignmentMode="alignMargins"
+                android:useDefaultMargins="true">
+
+                <Button
+                    android:id="@+id/btn_letter_1"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_columnWeight="1"
+                    android:backgroundTint="#FFB6C1"
+                    android:text="P"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_letter_2"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_columnWeight="1"
+                    android:text="E"
+                    android:backgroundTint="#ADD8E6"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_letter_3"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_columnWeight="1"
+                    android:text="S"
+                    android:backgroundTint="#FFB6C1"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_letter_4"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_columnWeight="1"
+                    android:text="A"
+                    android:backgroundTint="#ADD8E6"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_letter_5"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_columnWeight="1"
+                    android:text="W"
+                    android:backgroundTint="#FFB6C1"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_letter_6"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_columnWeight="1"
+                    android:text="A"
+                    android:backgroundTint="#ADD8E6"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_letter_7"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_columnWeight="1"
+                    android:text="T"
+                    android:backgroundTint="#FFB6C1"
+                    android:textSize="18sp" />
+            </GridLayout>
+
+            <!-- Tombol Acak Ulang -->
+            <Button
+                android:id="@+id/btn_shuffle"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#CAD55A"
+                android:layout_marginTop="12dp"
+                android:text="Acak Ulang"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Tombol Cek -->
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/main_card"
+        android:layout_marginTop="16dp"
+        android:text="CEK"
+        android:textAllCaps="false"
+        android:backgroundTint="#60C864"
+        android:textSize="16sp"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

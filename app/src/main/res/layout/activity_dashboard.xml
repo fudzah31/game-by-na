@@ -1,0 +1,73 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".DashboardActivity"
+    android:padding="16dp">
+
+    <!-- GridLayout 2×2, dilebarkan, di‑center horizontal, diturunkan sedikit -->
+    <GridLayout
+        android:id="@+id/gridLevels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/susunkata"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/game01"
+            android:contentDescription="SUSUN KATA"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <ImageView
+            android:id="@+id/tebakgambar"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/game02"
+            android:contentDescription="TEBAK GAMBAR"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <ImageView
+            android:id="@+id/matematika"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/game03"
+            android:contentDescription="MATEMATIKA"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <ImageView
+            android:id="@+id/tebaknegara"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/game04"
+            android:contentDescription="TEBAK NEGERI"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+    </GridLayout>
+
+    <!-- Tombol Keluar -->
+    <Button
+        android:id="@+id/btnKeluar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/back"
+        android:paddingHorizontal="24dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+</RelativeLayout>

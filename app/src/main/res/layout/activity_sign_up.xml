@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout untuk halaman Sign Up, dengan elemen di tengah -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:src="@drawable/signup"/>
+
+
+    <EditText
+        android:id="@+id/usersign"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:background="@drawable/edittx"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/passign"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:background="@drawable/edittx"
+        android:inputType="textPassword"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/consign"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Confirmation Password"
+        android:background="@drawable/edittx"
+        android:inputType="textPassword"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnsign"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonbg2"
+        android:text="Sign Up"/>
+
+
+</LinearLayout>

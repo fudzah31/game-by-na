@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <!-- Tombol home/pause -->
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-15dp"
+        android:background="@drawable/home"
+        android:contentDescription="Back" />
+
+    <!-- Timer -->
+    <TextView
+        android:id="@+id/text_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:background="@drawable/edittx"
+        android:text="00:30"
+        android:textSize="18sp"
+        android:textColor="@android:color/white" />
+
+    <!-- Skor -->
+    <TextView
+        android:id="@+id/text_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:padding="8dp"
+        android:background="@drawable/edittx"
+        android:text="Score: 0"
+        android:textSize="18sp"
+        android:textColor="@android:color/white" />
+
+    <!-- Kartu soal (tengah layar) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
+
+            <!-- Soal -->
+            <TextView
+                android:id="@+id/text_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih gambar yang sesuai dengan kata:"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/text_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="KUCING"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+
+            <!-- Jawaban gambar -->
+            <GridLayout
+                android:id="@+id/grid_images"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:columnCount="3"
+                android:rowCount="1"
+                android:useDefaultMargins="true"
+                android:alignmentMode="alignMargins"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btn_image_1"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="centerCrop"
+                    android:background="@null"
+                    android:src="@drawable/kucing"
+                    android:contentDescription="Gambar 1" />
+
+                <ImageButton
+                    android:id="@+id/btn_image_2"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="centerCrop"
+                    android:background="@null"
+                    android:src="@drawable/anjing"
+                    android:contentDescription="Gambar 2" />
+
+                <ImageButton
+                    android:id="@+id/btn_image_3"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    android:scaleType="centerCrop"
+                    android:background="@null"
+                    android:src="@drawable/ayam"
+                    android:contentDescription="Gambar 3" />
+            </GridLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Tombol cek -->
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/main_card"
+        android:layout_marginTop="16dp"
+        android:text="CEK"
+        android:textAllCaps="false"
+        android:backgroundTint="#60C864"
+        android:textSize="16sp"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
