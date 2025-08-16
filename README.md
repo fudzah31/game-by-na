@@ -21,15 +21,6 @@
 
 ---
 
-## 🏴 Structure of the Chaos
-
-app/
- ┣ java/       # cursed logic & Android brain
- ┣ res/        # haunted XML layouts
- ┣ assets/     # optional dark matter
- ┗ database/   # SQLite tomb 
-
----
 
 ## ☠️ Current State
 Not stable. Not clean.  
