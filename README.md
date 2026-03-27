@@ -1,56 +1,58 @@
 # 🎮 Game by Na  
 
-> A simple Android game project built as a beginner learning experience.  
-> Designed with colorful visuals and easy gameplay for kids.  
+> A simple Android game project built as a beginner learning experience,  
+> featuring colorful visuals and easy gameplay for kids.  
 
 ---
 
 ## 📱 About  
 
 This project is my first step into Android game development.  
-The game focuses on **simple mechanics, bright UI, and beginner-friendly interaction**,  
-while I learn how to build and manage a mobile game project.  
+It focuses on building **simple game mechanics, bright UI, and user-friendly interaction**,  
+while learning how to structure and manage a mobile game project.  
 
-It’s still a work in progress, but built with real effort and curiosity.  
+Currently still in progress and continuously being improved.  
 
 ---
 
 ## 🎨 Tech Stack  
 
 - ☕ Java  
+- 🤖 Android Studio  
+- ⚡ Gradle  
 - 🧾 XML (UI Layout)  
 - 🗄️ SQLite (Local Data)  
-- ⚡ Gradle  
-- 🤖 Android Studio  
 
 ---
 
 ## 🕹 Features  
 
 - 🎲 Simple and easy gameplay  
-- 🌈 Colorful interface suitable for kids  
-- 📱 Offline play  
-- 💾 Basic data storage with SQLite  
+- 🌈 Colorful interface for kids  
+- 📱 Offline support  
+- 💾 Basic data storage using SQLite  
 
 ---
 
 ## 🚀 Learning Goals  
 
 - Understanding basic game logic  
-- Managing UI in Android using XML  
-- Handling simple data with SQLite  
-- Improving coding structure and consistency  
+- Managing UI using XML in Android  
+- Handling local data with SQLite  
+- Improving code structure and consistency  
 
 ---
 
-## ⚠️ Current State  
+## ⚠️ Current Status  
 
-This project is still in development.  
-Some features may be incomplete and there might be bugs.  
+This project is still under development.  
+Some features may be incomplete and bugs may still exist.  
 
 ---
 
-## 🌟 Note  
+## 🌱 Note  
 
-This is a beginner project —  
-built to learn, explore, and improve step by step.
+This is a beginner project,  
+built as part of the learning process in game development.  
+
+> learning by building and improving step by step.
